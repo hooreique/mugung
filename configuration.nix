@@ -26,18 +26,6 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
-  };
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
@@ -48,14 +36,12 @@
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
-    variant = "";
   };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -81,7 +67,6 @@
       "networkmanager" "wheel"
       "input"  "uinput"
     ];
-    packages = [];
     shell = pkgs.zsh;
   };
 
@@ -154,10 +139,7 @@
   programs.git.enable = true;
   programs.vim.enable = true;
   programs.zsh.enable = true;
-  programs.dconf.enable = true;
   programs.steam.enable = true;
-
-  console.keyMap = "us";
 
   i18n.inputMethod = {
     enable = true;
