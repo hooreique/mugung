@@ -38,9 +38,6 @@
     layout = "us";
   };
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
   # Enable sound with pipewire.
   security.rtkit.enable = true;
   services.pipewire = {
