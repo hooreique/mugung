@@ -144,6 +144,7 @@
   };
 
   hardware.uinput.enable = true;
+  hardware.keyboard.uhk.enable = true;
 
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia = {
