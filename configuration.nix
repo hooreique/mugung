@@ -159,4 +159,17 @@
   services.flatpak.enable = true;
 
   services.smartd.enable = true;
+
+  fileSystems."/mnt/projects" = {
+    device = "/dev/disk/by-uuid/BC40524740520892";
+    fsType = "ntfs3";
+    options = [
+      "rw"
+      "exec"
+      "uid=1000" # song
+      "gid=100"  # users
+      "umask=0022"
+      "nofail"
+    ];
+  };
 }
