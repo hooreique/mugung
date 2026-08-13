@@ -60,10 +60,7 @@
   users.users.song = {
     isNormalUser = true;
     description = "hooreique";
-    extraGroups = [
-      "networkmanager" "wheel"
-      "input"  "uinput"
-    ];
+    extraGroups = [ "networkmanager"  "wheel"  "input"  "uinput" ];
     shell = pkgs.zsh;
   };
 
@@ -98,7 +95,6 @@
   system.stateVersion = "26.05"; # Did you read the comment?
 
   nix.settings = {
-    experimental-features = [ "nix-command"  "flakes" ];
     extra-substituters = [
       "https://cache.numtide.com"
       "https://hooreique.cachix.org"
