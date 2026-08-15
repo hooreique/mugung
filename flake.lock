@@ -123,11 +123,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1786767302,
-        "narHash": "sha256-xkoS1XvQa5XftVZPSKLMKlU4fcXdGy5UuTGzZtQoT6w=",
+        "lastModified": 1786811147,
+        "narHash": "sha256-2Qf9dcIuYzxf5rr8a5wyTg2fgiIi1nKTE3FKTPHN0rg=",
         "owner": "hooreique",
         "repo": "lisle",
-        "rev": "870f25e6a9a4fb38dbe7490c910484368c557a7c",
+        "rev": "88e3f007598787a2b49d8ce88281b83b84a123f4",
         "type": "github"
       },
       "original": {
