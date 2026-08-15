@@ -151,7 +151,6 @@
   # For Zen
   #   flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
   #   flatpak install flathub app.zen_browser.zen
-  #   flatpak override --user --nosocket=wayland --env=GTK_IM_MODULE=xim --env=XMODIFIERS=@im=kime app.zen_browser.zen
   services.flatpak.enable = true;
 
   services.smartd.enable = true;
