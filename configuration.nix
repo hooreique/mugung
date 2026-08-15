@@ -148,6 +148,8 @@
     package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
   };
 
+  fonts.fontconfig.subpixel.rgba = "rgb";
+
   # For Zen
   #   flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
   #   flatpak install flathub app.zen_browser.zen
