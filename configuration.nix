@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, inputs, pkgs, ... }:
 
 {
   imports =
@@ -132,11 +132,10 @@
 
   i18n.inputMethod = {
     enable = true;
-    type = "kime";
-    kime = {
-      daemonModules = [ "Xim"  "Indicator" ];
-      iconColor = "White";
-    };
+    type = "ibus";
+    ibus.engines = [
+      inputs.lisle.packages.${pkgs.stdenv.hostPlatform.system}.lisle
+    ];
   };
 
   hardware.uinput.enable = true;
