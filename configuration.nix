@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   imports =
@@ -129,14 +129,6 @@
   programs.vim.enable = true;
   programs.zsh.enable = true;
   programs.steam.enable = true;
-
-  i18n.inputMethod = {
-    enable = true;
-    type = "ibus";
-    ibus.engines = [
-      inputs.lisle.packages.${pkgs.stdenv.hostPlatform.system}.lisle
-    ];
-  };
 
   hardware.uinput.enable = true;
   hardware.keyboard.uhk.enable = true;
