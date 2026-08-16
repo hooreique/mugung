@@ -118,6 +118,24 @@
         "url": "https://flakehub.com/f/cachix/git-hooks.nix/0.1.941"
       }
     },
+    "lisle": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1786878336,
+        "narHash": "sha256-EkqZn8CKJcNuxVVVob4Znxgyji93+TstCnjEK/dn7wo=",
+        "owner": "hooreique",
+        "repo": "lisle",
+        "rev": "1796a7ce4a34d4427f9ead7f4ec402b2e769d21f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hooreique",
+        "repo": "lisle",
+        "type": "github"
+      }
+    },
     "nix": {
       "inputs": {
         "flake-parts": "flake-parts",
@@ -187,6 +205,22 @@
     },
     "nixpkgs_2": {
       "locked": {
+        "lastModified": 1786599213,
+        "narHash": "sha256-yNJd40f11EzXBjSByCB7IPpeFFAdeoSKKM67dGkfFoU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "0e251e24a4f24e036a084b6b4b2d2491af4167f4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
         "lastModified": 1786535285,
         "narHash": "sha256-rG5HKMAgAhMgydvKGtco6rqTxRq4EDZQCx9USLvVqYw=",
         "rev": "9f78f44a87948854445dae0b6bf82b2e87e4efb5",
@@ -202,7 +236,8 @@
     "root": {
       "inputs": {
         "determinate": "determinate",
-        "nixpkgs": "nixpkgs_2"
+        "lisle": "lisle",
+        "nixpkgs": "nixpkgs_3"
       }
     }
   },

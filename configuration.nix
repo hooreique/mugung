@@ -129,6 +129,7 @@
   programs.vim.enable = true;
   programs.zsh.enable = true;
   programs.steam.enable = true;
+  programs.lisle.enable = true;
 
   hardware.uinput.enable = true;
   hardware.keyboard.uhk.enable = true;
