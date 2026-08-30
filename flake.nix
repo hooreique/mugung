@@ -1,7 +1,6 @@
 {
   inputs.nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0";
-  inputs.determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/3";
-  inputs.determinate.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
   inputs.lisle.url = "github:hooreique/lisle";
   outputs = inputs: {
     nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
