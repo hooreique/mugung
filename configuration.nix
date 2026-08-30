@@ -99,6 +99,10 @@
       "https://cache.numtide.com"
       "https://hooreique.cachix.org"
     ];
+    extra-trusted-substituters = [
+      "https://cache.numtide.com"
+      "https://hooreique.cachix.org"
+    ];
     extra-trusted-public-keys = [
       "niks3.numtide.com-1:DTx8wZduET09hRmMtKdQDxNNthLQETkc/yaX7M4qK0g="
       "hooreique.cachix.org-1:xuPFUhHZkm48tim3zma5/v67Fag5vn8XLBXLiYYeXOE="
