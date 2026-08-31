@@ -121,11 +121,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1786878336,
-        "narHash": "sha256-EkqZn8CKJcNuxVVVob4Znxgyji93+TstCnjEK/dn7wo=",
+        "lastModified": 1788193105,
+        "narHash": "sha256-K6lMZ+lL/a5ehXgFYWXUaKfVS13Wz4ObrqHPcAi/c+k=",
         "owner": "hooreique",
         "repo": "lisle",
-        "rev": "1796a7ce4a34d4427f9ead7f4ec402b2e769d21f",
+        "rev": "35035df83e2c90a98443a5f85b89eef2c773837e",
         "type": "github"
       },
       "original": {
