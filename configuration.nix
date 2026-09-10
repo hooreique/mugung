@@ -129,6 +129,11 @@
     };
   };
 
+  # Wake-on-Lan
+  networking.networkmanager.settings.connection-wol.match-device = "interface-name:enp34s0";
+  networking.networkmanager.settings.connection-wol."ethernet.wake-on-lan" = 64; # Magic packet
+  services.displayManager.gdm.autoSuspend = false;
+
   programs.git.enable = true;
   programs.vim.enable = true;
   programs.zsh.enable = true;
